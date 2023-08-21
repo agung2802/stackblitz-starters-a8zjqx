@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+/* Style the navigation bar */
+
+.container {
+  padding: 2% 10%;
+}
+.navbar {
+  background-color: #973d46;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 18% 37% 11% 11%;
+  grid-gap: 10px;
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.formSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  width: 100%;
+}
+
+form.find input {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #f4e3cf;
+  // float: left;
+  width: 84%;
+  background: #f4e3cf;
+}
+
+form.find button {
+  // float: left;
+  // height: 42px;
+  width: 10%;
+  padding: 10px;
+  background: #f4e3cf;
+  color: #973d46;
+  font-size: 17px;
+  border: 1px solid #f4e3cf;
+  border-left: none;
+  cursor: pointer;
+}
+
+/* Clear floats */
+form.find::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.btn-upload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload {
+  padding: 10px;
+  height: 42px;
+  width: 100%;
+  background: #f4e3cf;
+  color: #973d46;
+  font-size: 17px;
+  border: 1px solid #f4e3cf;
+  border-left: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #f4e3cf;
+}
+
+a::after {
+  content: '/';
+  font-weight: 600;
+  margin: 20px;
+}
+a.end::after {
+  content: '';
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 69% 30%;
+  grid-gap: 10px;
+}
